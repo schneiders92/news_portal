@@ -16,10 +16,16 @@ header{
 
 .article-cont{
     width: 30vw;
+    min-width: 500px;
     height: auto;
+
 
 }
 
 .article-cont img{
     width: 80%
+}
+
+.article-cont p{
+    font-size: 1.3rem;
 }
