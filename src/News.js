@@ -16,7 +16,7 @@ export default function News(props) {
 
 
     function getNews() {
-        fetch(`https://newsapi.org/v2/everything?q=${props.category}&from=2021-08-21&to=2021-08-21&sortBy=popularity&apiKey=1ae7b13f9499425b8874d2b0123bcfaa`)
+        fetch(`https://newsapi.org/v2/everything?q=${props.category}&from=2021-08-26&to=2021-08-26&sortBy=popularity&apiKey=1ae7b13f9499425b8874d2b0123bcfaa`)
             .then(resp => resp.json())
             .then(news => setNews(news.articles))
     }

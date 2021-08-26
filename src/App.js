@@ -1,7 +1,9 @@
 import './App.css';
 import News from './News'
 import Header from "./Header"
+import NewsFilter from "./NewsFilter";
 import {BrowserRouter as Router, Link, Switch, Route} from "react-router-dom"
+
 
 function App() {
 
@@ -11,7 +13,7 @@ function App() {
             <Header/>
             <Switch>
                 <Route path="/home">
-                    <News category="top-headlines"/>
+                    <NewsFilter category="top-headlines"/>
                 </Route>
                 <Route path="/politics">
                     <News category="politics"/>
