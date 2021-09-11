@@ -13,7 +13,7 @@ export default function NewsFilter(props){
                     <option value="">Relevancy</option>
                 </select>
             </div>
-            <News category={props.category}></News>
+            <News category={props.category}/>
         </div>
 
 
