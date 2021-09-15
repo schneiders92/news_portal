@@ -14,6 +14,7 @@ export default function NewsFilter(props){
                 </select>
             </div>
             <News category={props.category} sort={sort}/>
+
         </div>
 
 
