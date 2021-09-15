@@ -10,11 +10,12 @@ export default function News(props) {
 
   useEffect(() => {
     getNews();
-  }, [props.category]);
+  }, [props.category, props.sort]);
+
 
   function getNews() {
     fetch(
-      `https://newsapi.org/v2/everything?q=${props.category}&from=2021-08-26&to=2021-08-26&sortBy=popularity&apiKey=1ae7b13f9499425b8874d2b0123bcfaa`
+      `https://newsapi.org/v2/everything?q=${props.category}&from=2021-08-26&to=2021-08-26&sortBy=${props.sort}&apiKey=1ae7b13f9499425b8874d2b0123bcfaa`
     )
       .then((resp) => resp.json())
       .then((news) => setNews(news.articles));

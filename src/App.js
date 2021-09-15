@@ -16,16 +16,16 @@ function App() {
                     <NewsFilter category="top-headlines"/>
                 </Route>
                 <Route path="/politics">
-                    <News category="politics"/>
+                    <NewsFilter category="politics"/>
                 </Route>
                 <Route path="/economy">
-                    <News category="economy"/>
+                    <NewsFilter category="economy"/>
                 </Route>
                 <Route path="/sport">
-                    <News category="sport"/>
+                    <NewsFilter category="sport"/>
                 </Route>
                 <Route path="/tech">
-                    <News category="tech"/>
+                    <NewsFilter category="tech"/>
                 </Route>
             </Switch>
 
